@@ -1,0 +1,71 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart">
+  <view class="top">
+    <view class="top-left">
+      <text>购物车</text>
+      <text>共{{shopcount}}件宝贝</text>
+    </view>
+    <view class="top-right">
+      <block wx:if="{{isdelete==1}}">
+        <text bindtap="check">管理</text>
+      </block>
+      <block wx:else>
+        <text bindtap="check1">清空购物车</text>
+      </block>
+    </view>
+  </view>
+  <view class="item" wx:for="{{shoplist}}" wx:for-item="item" wx:key="index">
+    <view class="hidden" style="width:140%">
+      <view style="width:72%;float: left;">
+        <view class="item-left">
+          <checkbox value="{{item.id}}" checked="{{item.checked}}" data-index="{{index}}" bindtap="selectdan" />
+        </view>
+        <view class="item-mid">
+          <image src="http://img.9lele.com{{item.goods_img}}"></image>
+        </view>
+        <view class="item-right">
+          <view><text>{{item.goods_name}}</text><text>领券</text></view>
+          <block wx:if="{{item.sku_id != null}}">
+            <view>{{item.sku_pname}}+{{item.sku_sname}}</view>
+          </block>
+          <block wx:else>
+            <!-- <view>{{item.sku_pname}}+{{item.sku_sname}}</view> -->
+          </block>
+          <view><text class="color">￥{{item.price}}</text><text class="but">x1</text></view>
+        </view>
+      </view>
+      <view>
+        <view class="ra">
+          <view class="raa"><text>找相似</text></view>
+        </view>
+        <view class="rb">
+          <view class="raa"><text>移入收藏夹</text></view>
+        </view>
+        <view class="rc" bindtap="delete" data-ids="{{item.id}}">
+          <image src="../../img/删 除.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="footer-left">
+      <checkbox bindtap="selectall" />全选
+    </view>
+    <view class="footer-mid">
+      <text>￥{{price}}</text>
+    </view>
+    <view class="footer-right">
+      <block wx:if="{{issumprice==1}}">
+        <button size="mini" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">结算</button>
+      </block>
+      <block wx:else>
+        <button size="mini" bindtap="gosumprice">结算</button>
+      </block>
+    </view>
+  </view>
+  <!-- <view wx:for="{{array}}" wx:for-item="item">
+    <view>{{item.text}}</view>
+    <image src="{{item.text}}"></image>
+  </view> -->
+</view>

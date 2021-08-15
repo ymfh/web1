@@ -1,0 +1,35 @@
+/* pages/parts/parts.wxss */
+
+.top{
+  width: 100%;
+  height: 4rem;
+  line-height: 3rem;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.top::-webkit-scrollbar{
+  width: 0;
+}
+.top .hidden{
+  width: 125%;
+  height: 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #cccccc;
+}
+.top .hidden view{
+  width: auto;
+  height: 2.5rem;
+  float: left;
+  font-size: 0.8rem;
+}
+
+.border{
+  transition: all .3s ease-out .1s; 
+  border-bottom: 6rpx solid #000000;
+  color: #000000;
+  font-weight: 600;
+}

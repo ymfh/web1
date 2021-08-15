@@ -1,0 +1,36 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true"
+    markers="{{markers}}" bindmarkertap="makertap"></map>
+</view>
+<!-- <view class="rgc_info">
+  <text>经度：{{longitude}}</text>
+  <text>纬度：{{latitude}}</text>
+</view> -->
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <view class="picker">
+    当前选择：{{region[0]}} - {{region[1]}} - {{region[2]}}
+  </view>
+</picker>
+
+<view class="section">
+  <input placeholder="请输入详细地址" type="text" bindinput="bindKeyInput" class="input" value="{{address}}" />
+
+  <view class="sug_info" hidden="{{isshow==1}}">
+    <view wx:for="{{arr}}" bindtap="checkAddress" data-datas="{{item}}" wx:key="i">
+      {{item}}
+    </view>
+  </view>
+
+  <input placeholder="输入收件人姓名" type="text" class="input" bindinput="userName" value="{{username}}"/>
+  <input placeholder="输入收件人电话" type="text" class="input" bindinput="userTel" value="{{usertel}}"/>
+</view>
+
+
+<view class="footer">
+  <block wx:if="{{issum==1}}">
+    <button style="width:80%" bindtap="append">增加收货地址</button>
+  </block>
+  <block wx:else>
+    <button style="width:80%" bindtap="edit">确认修改</button>
+  </block>
+</view>

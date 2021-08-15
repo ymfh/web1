@@ -1,0 +1,59 @@
+<!--pages/set/set.wxml-->
+<!-- <text>pages/set/set.wxml</text> -->
+<view class="set">
+  <view class="top">
+    <view class="top-mid">
+      <view>
+        <image src="../../myimg/my.png"></image>
+      </view>
+      <view>
+        <text>云鹤九霄</text>
+        <text>云鹤九霄 龙腾四海</text>
+      </view>
+      <view>
+        <image class="img" src="../../myimg/jiantou.png"></image>
+      </view>
+    </view>
+    <view class="border0">
+      <text class="a">我的收货地址</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="border">
+      <text class="a">账户安全</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+    <view class="border0">
+      <text class="a">支付</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="border">
+      <text class="a">消息通知</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+    <view class="border">
+      <text class="a">隐私</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+    <view class="border0">
+      <text class="a">通用</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+  </view>
+  <view class="nav" style="margin-bottom: 3rem;">
+    <view class="border">
+      <text class="a">帮助与反馈</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+    <view class="border0">
+      <text class="a">关于果粉</text>
+      <image class="img" src="../../myimg/jiantou.png"></image>
+    </view>
+  </view>
+
+  <button class="but" style=" width: 90%;">切换账号</button>
+  <button class="but" style=" width: 90%;">退出登录</button>
+</view>

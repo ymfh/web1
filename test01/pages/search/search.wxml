@@ -1,0 +1,34 @@
+<!--pages/sou/sou.wxml-->
+<view class="box">
+  <view class="top">
+    <view class="l1">
+      <image src="../../img/zuojiantou.png"></image>
+    </view>
+    <view class="l2">
+      <view class="le1">
+        <image src="../../img/放大镜.png"></image>
+      </view>
+      <view class="le2">
+        <input type="text" placeholder="苹果电脑" />
+      </view>
+      <view class="le3">
+        <image src="../../img/search_r.png"></image>
+      </view>
+    </view>
+    <view class="l3">搜索</view>
+  </view>
+  <view class="zi">热搜</view>
+  <view class="main">
+    <view class="m1">性价比iPhone SE</view>
+    <view class="m2">平板电脑</view>
+    <view class="m3">蓝牙耳机</view>
+  </view>
+  <view class="q"></view>
+  <view class="main2">
+    <view class="m4">mac book</view>
+    <view class="m5">12 Pro</view>
+  </view>
+  <view class="tu">
+    <image src="../../img/jianpan.png"></image>
+  </view>
+</view>

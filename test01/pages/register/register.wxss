@@ -1,0 +1,105 @@
+/* pages/login/login.wxss */
+.login {
+  width: 90%;
+  /* padding: 0 15px; */
+  margin: auto;
+}
+
+.login .top {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  /* background: lightcoral; */
+}
+
+.top .toptext1 {
+  float: left;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.top .image1 {
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 5px;
+  margin-right: 1.5rem;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.zhanghao {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.zhanghao ul {
+  width: 84%;
+  margin-left: 8%;
+  background: royalblue;
+  font-size: 1.2rem;
+  /* display: flex;
+  flex-flow: row wrap; */
+}
+
+.zhanghao li:hover {
+  border-bottom: 3px solid #000;
+}
+
+.zhanghao .zh1 {
+  display: block;
+  float: left;
+  margin-left: 8%;
+  font-weight: 700;
+}
+
+.zhanghao .zh2 {
+  display: block;
+  float: right;
+  margin-right: 8%;
+  font-weight: 700;
+}
+
+.phone {
+  width: 84%;
+  height: 50px;
+  margin-left: 8%;
+  margin-top: 4rem;
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+
+.yanzheng {
+  width: 56%;
+  height: 50px;
+  margin-left: 8%;
+  margin-top: 2rem;
+  border-bottom: 1px solid rgb(129, 129, 129);
+  /* display: inline-block; */
+  float: left;
+}
+
+.yanzheng1 {
+  /* display: inline-block; */
+  width: 28%;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 40px;
+  border-radius: 5px;
+  float: left;
+
+}
+
+.password {
+  width: 84%;
+  height: 50px;
+  margin-left: 8%;
+  border-bottom: 1px solid rgb(129, 129, 129);
+}

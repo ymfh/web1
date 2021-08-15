@@ -1,0 +1,43 @@
+<view>
+  <view class="list" wx:for="{{address}}" wx:key="index">
+
+    <view class="left" bindtap="setCheckedAddress" data-id="{{item.id}}">
+      <view class="top">
+        <block wx:if="{{item.is_check==2}}">
+          <button size="mini" class="one" style="width:3rem;font-size: 0.6rem;">默认</button>
+        </block>
+        <block wx:if="{{item.is_check==1}}">
+        
+        </block>
+
+        <button size="mini" class="two" style="width:3rem;font-size: 0.6rem;">学校</button>
+        <text>{{item.city_name}}{{item.area_name}}</text>
+      </view>
+      <view class="mid">
+        <text>{{item.address}}</text>
+      </view>
+      <view class="set"><text class="username">{{item.name}}</text><text>{{item.tel}}</text></view>
+    </view>
+
+
+    <view class="right">
+      <image src="../../gisterimg/修改.png" bindtap="gogifaddress" data-ids="2" data-item="{{item}}"></image>
+      <image src="../../img/删除.png" bindtap="delete" data-item="{{item.id}}"></image>
+    </view>
+
+    <view class="checked">
+      <block>
+        <checkbox checked="{{item.id==is_check?true:false}}" bindtap="setchecked" data-id="{{item.id}}">
+        </checkbox>设为默认
+      </block>
+    </view>
+
+  </view>
+
+
+
+
+  <view class="footer">
+    <button style="width:80%" bindtap="gogifaddress" data-ids="1">+新增收货地址</button>
+  </view>
+</view>

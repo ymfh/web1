@@ -1,0 +1,533 @@
+/* pages/productDetail/productDetail.wxss */
+
+.box {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.nav {
+  width: 100%;
+  height: 12rem;
+  /* background-color: aqua; */
+  margin: 2rem auto;
+  background-color: #FFF;
+}
+
+.nav swiper {
+  height: 12rem;
+}
+
+.nav image {
+  width: 70%;
+  height: 12rem;
+  border-radius: 1rem;
+  display: block;
+  margin: auto;
+}
+
+.price {
+  width: 100%;
+  height: 4rem;
+  background-color: #FFF;
+  /* background-color: rgb(74, 177, 177); */
+}
+
+.price view:first-child {
+  width: 55%;
+  margin-left: 1rem;
+  color: rgb(160, 97, 15);
+  float: left;
+}
+
+.price view:first-child text {
+  color: rgb(160, 97, 15);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+.price view:nth-child(2) {
+  width: 20%;
+  color: rgb(160, 97, 15);
+  float: left;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 0.5rem;
+  font-family: "宋书";
+}
+
+.price view:nth-child(2) image {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.price view:last-child {
+  width: 20%;
+  color: rgb(160, 97, 15);
+  float: left;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 0.5rem;
+}
+
+.price view:last-child image {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.name {
+  width: 100%;
+  height: 15rem;
+  background-color: #FFF;
+}
+
+.name view:first-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-left: 1rem;
+
+  /* overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; */
+}
+
+.name view:nth-child(2) {
+  line-height: 2.5;
+  margin-left: 1rem;
+}
+
+.name view:nth-child(3) {
+  width: 100%;
+  height: 2rem;
+  color: #cccccc;
+  line-height: 2rem;
+}
+
+.name view:nth-child(3) text:first-child {
+  margin-left: 1rem;
+  float: left;
+}
+
+.name view:nth-child(3) text:last-child {
+  margin-right: 1rem;
+  float: right;
+}
+
+.name view:last-child {
+  width: 90%;
+  margin: auto;
+}
+
+.name view:last-child text {
+  margin-left: 0.5rem;
+  line-height: 1.5;
+  font-family: "宋体";
+}
+
+.bao {
+  width: 100%;
+  height: 5rem;
+  margin-top: 1.5rem;
+  background-color: #FFF;
+  font-size: 0.9rem;
+}
+
+.bao-left {
+  width: 13%;
+  float: left;
+}
+
+.bao-left text {
+  float: right;
+  margin-top: 1rem;
+  color: #d5d5d5;
+}
+
+.bao-mid {
+  width: 70%;
+  float: left;
+}
+
+.bao-mid text {
+  float: left;
+  display: block;
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+
+.bao-mid text:first-child {
+  margin-top: 1rem;
+}
+
+.bao-right {
+  width: 10%;
+  float: left;
+}
+
+.bao-right image {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.select {
+  width: 100%;
+  height: 4rem;
+  margin-top: 1.5rem;
+  background-color: #FFF;
+  font-size: 0.9rem;
+}
+
+.pj {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  margin-top: 1.5rem;
+}
+
+.pj-top {
+  width: 100%;
+  height: 3rem;
+}
+
+.pj-top text:first-child {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  line-height: 3rem;
+  font-family: "黑体";
+  font-weight: 600;
+  float: left;
+}
+
+.pj-top text:nth-child(2) {
+  font-size: 1.1rem;
+  line-height: 3rem;
+  margin-left: 32%;
+}
+
+.pj-top image {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  float: right;
+}
+
+.but {
+  width: 100%;
+  height: 3rem;
+}
+
+.but text {
+  padding: 0.4rem 0.8rem;
+  background-color: #ffd1c6;
+  margin-left: 1rem;
+  font-size: 0.6rem;
+  border-radius: 1rem;
+  color: #f6a09f;
+}
+
+.nick {
+  width: 100%;
+  height: 7rem;
+  line-height: 2rem;
+}
+
+.nick image {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  float: left;
+  margin-left: 1rem;
+}
+
+.nick text {
+  display: block;
+}
+
+.nick text:first-child {
+  margin-left: 1rem;
+}
+
+.nick text:last-child {
+  margin-left: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  bottom: 0px;
+  background-color: #FFF;
+}
+
+.footer view {
+  height: 5rem;
+  float: left;
+}
+
+.footer view:first-child {
+  margin-left: 5%;
+}
+
+.footer view:first-child,
+.footer view:nth-child(2) {
+  width: 15%;
+  height: 5rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.footer view image {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer view:nth-child(3) {
+  margin-left: 5%;
+}
+
+.footer view:nth-child(3),
+.footer view:last-child {
+  width: 25%;
+  height: 5rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+.footer view:nth-child(3) text {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #ff8468;
+  border-radius: 1.25rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.footer view:nth-child(4) text {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f5932a;
+  border-radius: 1.25rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.footer view:nth-child(4) {
+  margin-left: 1rem;
+}
+
+/*使屏幕变暗  */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+.commodity_attr_box {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.top {
+  width: 90%;
+  margin: auto;
+  height: 6rem;
+}
+
+.top image {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.top text {
+  line-height: 3rem;
+  color: #d64b2c;
+  font-size: 0.6rem;
+}
+
+.top text:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.dizhi {
+  width: 90%;
+  height: 4rem;
+  margin: auto;
+  clear: both;
+  /* background-color: #d5d5d5; */
+}
+
+.di-left {
+  width: 70%;
+  height: 4rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  /* background-color: #e0b0b0; */
+  float: left;
+}
+
+.di-left text:first-child {
+  font-weight: 600;
+}
+
+.di-left text:nth-child(2) {
+  font-size: 10px;
+  color: #cccccc;
+  margin-left: 0.5rem;
+  /* margin-right: 5rem; */
+}
+
+.di-right {
+  width: 20%;
+  height: 4rem;
+  float: right;
+}
+
+.di-right image {
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.desc {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.s {
+  width: 100%;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.a view {
+  width: 3rem;
+  float: left;
+  height: 2rem;
+}
+
+.a text {
+  padding: 0.2rem 0.5rem;
+  /* background-color: #f5f5f5; */
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 10px;
+}
+
+.a,
+.b,
+.c {
+  width: 100%;
+  height: 2rem;
+}
+
+
+.b view {
+  width: 4rem;
+  float: left;
+  height: 2rem;
+}
+.b text {
+  padding: 0.2rem 0.5rem;
+  /* background-color: burlywood; */
+  font-size: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #d64b2c;
+  margin-right: 0.5rem;
+}
+
+.c text {
+  padding: 0.2rem 0.5rem;
+  background-color: burlywood;
+  font-size: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #d64b2c;
+  margin-right: 0.5rem;
+}
+
+.s:last-child text:last-child {
+  float: right;
+  font-weight: normal;
+}
+
+.but1 {
+  width: 100%;
+  height: 2rem;
+
+  position: fixed;
+  bottom: 2rem;
+}
+
+.but1 button {
+  width: 80%;
+  background-color: #d64b2c;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+.wx1_check{
+  background-color: red;
+  color: #fff;
+}
+.wx2_check{
+  background-color: red;
+  color: #fff;
+}
+
+.top .close{
+  float: right;
+  color: #000000;
+  font-weight: normal;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.top .bigfont{
+  font-weight: 600;
+  font-size: 1.2rem;
+}

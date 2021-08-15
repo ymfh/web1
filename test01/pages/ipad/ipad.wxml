@@ -1,0 +1,98 @@
+<!--pages/ipad/ipad.wxml-->
+<view class="box">
+  <view class="one" wx:for="{{sortlist1}}" wx:key="index">
+    <view class="a">
+      <image src="http://img.9lele.com{{item.original_img}}" />
+    </view>
+    <view class="b"><text>{{item.goods_name}}</text></view>
+    <view class="c">
+      <text class="but1">本店平板电脑热销第二名</text>
+      <text class=""></text>
+    </view>
+    <view class="d">
+      ￥<text>{{item.shop_price}}</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view>
+  <!-- <view class="one">
+    <view class="a">
+      <image src="../../ipad/1_03.png" />
+    </view>
+    <view class="b"><text>Apple/苹果iPad Pro 11英寸2020新款平板电脑..</text></view>
+    <view class="c">
+      <text class="but2">512GB</text>
+    </view>
+    <view class="d">
+      ￥<text>5280.00</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view> -->
+  <!-- <view class="one">
+    <view class="a">
+      <image src="../../ipad/1_09.png" />
+    </view>
+    <view class="b"><text>Apple/苹果iPad Pro 11英寸2020新款平板电脑..</text></view>
+    <view class="c">
+      <text class="but2">512GB</text>
+      <text class="but2">256GB</text>
+    </view>
+    <view class="d">
+      ￥<text>5280.00</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view> -->
+  <!-- <view class="one">
+    <view class="a">
+      <image src="../../ipad/1_09.png" />
+    </view>
+    <view class="b"><text>Apple/苹果iPad Pro 11英寸2020新款平板电脑..</text></view>
+    <view class="c">
+      <text class="but1">本店平板电脑热销第二名</text>
+      <text class=""></text>
+    </view>
+    <view class="d">
+      ￥<text>5280.00</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view> -->
+  <!-- <view class="one">
+    <view class="a">
+      <image src="../../ipad/1_14.png" />
+    </view>
+    <view class="b"><text>Apple/苹果iPad Pro 11英寸2020新款平板电脑..</text></view>
+    <view class="c">
+      <text class="but2">512GB</text>
+      <text class="but2">256GB</text>
+    </view>
+    <view class="d">
+      ￥<text>5280.00</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view> -->
+  <!-- <view class="one">
+    <view class="a">
+      <image src="../../ipad/1_14.png" />
+    </view>
+    <view class="b"><text>Apple/苹果iPad Pro 11英寸2020新款平板电脑..</text></view>
+    <view class="c">
+      <text class="but1">本店平板电脑热销第二名</text>
+      <text class=""></text>
+    </view>
+    <view class="d">
+      ￥<text>5280.00</text>
+    </view>
+    <view class="e">
+      <text>1.7w万+好评 好评95%</text>
+    </view>
+  </view> -->
+</view>

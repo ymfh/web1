@@ -1,0 +1,64 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/register/register",
+    "pages/address/address",
+    "pages/pay/pay",
+    "pages/sumprice/sumprice",
+    "pages/addloction/addloction",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/cart/cart",
+    "pages/ucenter/ucenter",
+    "pages/productDetail/productDetail",
+    "pages/ipad/ipad",
+    "pages/set/set",
+    "pages/parts/parts",
+    "pages/search/search",
+    "pages/login/login",
+    "pages/store/store",
+    "pages/gifaddress/gifaddress"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#fff",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":30
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "list": [{
+      "selectedIconPath": "./img/shouyexuanzhong.png",
+      "iconPath": "./img/shouye.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "./img/luntanxuanzhong.png",
+      "iconPath": "./img/luntan.png",
+      "pagePath":"pages/message/message",
+      "text": "论坛"
+    },{
+      "selectedIconPath": "./img/cartxuanzhong.png",
+      "iconPath": "./img/cart.png",
+      "pagePath":"pages/cart/cart",
+      "text": "购物车"
+    },{
+      "selectedIconPath": "./img/wodexuanzhong.png",
+      "iconPath": "./img/wode.png",
+      "pagePath":"pages/ucenter/ucenter",
+      "text": "我的"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

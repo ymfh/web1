@@ -1,0 +1,13 @@
+<view>
+  <view class="top">
+    <view class="left"><text>确认订单</text></view>
+    <view class="right"><image src="../../gisterimg/客服 (1).png"></image></view>
+  </view>
+  <view class="mid">
+    <view><text class="str">￥</text><text class="price">{{sumprice}}</text></view>
+    <view class="order">订单编号：{{order}}</view>
+  </view>
+  <view class="set">
+    <button style="width:80%">确认支付</button>
+  </view>
+</view>

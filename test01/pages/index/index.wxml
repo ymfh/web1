@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <text class="top-top">晚上好。</text>
+    <view class="top-step">
+      <view class="top-step-left" bindtap="search">
+        <image src="../../img/放大镜.png" />
+        <input type="text" placeholder="请输入你想要的商品" />
+      </view>
+      <view class="top-step-right">
+        <image src="../../img/消息.png" />
+      </view>
+    </view>
+  </view>
+  <!-- <image src="../../img/1.png"></image> -->
+  <view class="nav">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{datalist1}}" wx:for-item="img" wx:key="index" style="height:13rem">
+        <swiper-item>
+          <view data-index="{{index}}">
+            <image src="../../img/1.png" lazy-load="true" binderror="lazy0" data-ids="{{index}}" bindtap="onSwitchTab"
+              data-idd="{{img.ad_id}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="nav1">
+    <view wx:for="{{navimg}}" wx:for-item="item" wx:key="index" bindtap="log" data-index="{{index}}">
+      <image src="{{item.img}}"></image>{{item.title}}
+    </view>
+    <view bindtap="part">
+      <image src="../../img/配件.png"></image>配件
+    </view>
+    <!-- {
+    "img": "../../img/配件.png",
+    "title": "配件"
+    } -->
+  </view>
+
+  <text class="title1">新品上市</text>
+  <view class="newshop">
+    <view class="box">
+      <view wx:for="{{newlist1}}" wx:for-item="img" wx:key="index" bindtap="onSwitchTab" data-idd="{{img.goods_id}}">
+        <!-- <image src="{{img.img}}"></image> -->
+        <image src="http://img.9lele.com{{img.original_img}}" lazy-load="true" binderror="lazy" data-ids="{{index}}"
+          data-idx="{{img.goods_id}}" />
+        <text class="h1">{{img.goods_name}}</text>
+        <text class="p1">{{img.desc}}</text>
+        <text class="span1">￥</text><text class="span2">{{img.market_price}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <text class="title1">为您推荐</text>
+  <scroll-view class="tui">
+    <view class="flex">
+      <view class="little" wx:for="{{tuilist1}}" wx:key="index" bindtap="onSwitchTab" data-idd="{{item.goods_id}}">
+        <!-- <view> -->
+        <view style="height:7rem;">
+          <image src="http://img.9lele.com{{item.original_img}}" style="height:7rem" class="img1" lazy-load="true"
+            binderror="lazy1" data-ids="{{index}}"></image>
+        </view>
+        <text class="h2">{{item.goods_name}}</text>
+        <text class="button1">本店笔记本热销第二名</text>
+        <view class="span"><text>￥</text><text>{{item.shop_price}}</text></view>
+        <text class="span2">1.7w万+好评 好评95%</text>
+        <!-- </view> -->
+      </view>
+      <!-- <view bindtap="onSwitchTab" class="little">
+        <image src="../../img/shop1_03.png" class="img2"></image>
+        <text class="h2">Apple MacBook Pro 13.3新款八核M1芯片16G...</text>
+        <text class="button2">内存16GB</text>
+        <text class="button2" style="margin-left:1rem">512GB</text>
+        <view class="span"><text>￥</text><text>7999.00</text></view>
+        <text class="span2">1.6w万+好评 好评95%</text>
+      </view>
+      <view bindtap="onSwitchTab" class="little">
+        <image src="../../img/shop1_03.png" class="img2"></image>
+        <text class="h2">Apple MacBook Pro 13.3新款八核M1芯片16G...</text>
+        <text class="button2">内存16GB</text>
+        <text class="button2" style="margin-left:1rem">512GB</text>
+        <view class="span"><text>￥</text><text>7999.00</text></view>
+        <text class="span2">1.6w万+好评 好评95%</text>
+      </view>
+      <view bindtap="onSwitchTab" class="little">
+        <image src="../../img/shop2_03.png" class="img1"></image>
+        <text class="h2">Apple MacBook Air 13.3新款八核M1芯片(7..</text>
+        <text class="button1">本店笔记本热销第二名</text>
+        <view class="span"><text>￥</text><text>7999.00</text></view>
+        <text class="span2">1.7w万+好评 好评95%</text>
+      </view> -->
+    </view>
+  </scroll-view>
+</view>

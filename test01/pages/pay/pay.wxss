@@ -1,0 +1,59 @@
+/* pages/pay/pay.wxss */
+.top{
+  width: 85%;
+  height: 3rem;
+  margin: auto;
+}
+.top .left{
+  width: 50%;
+  height: 3rem;
+  float: left;
+  line-height: 3rem;
+}
+.top .left text{
+  font-weight: 1.3rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+}
+.top .right{
+  width: 50%;
+  height: 3rem;
+  float: right;
+}
+.top .right image{
+  width: 1.2rem;
+  height: 1.2rem;
+  float: right;
+  margin-top: 0.9rem;
+}
+.mid{
+  width: 85%;
+  height: 11rem;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.mid .str{
+ font-size: 0.8rem;
+}
+.mid .price{
+  font-size: 1.7rem;
+  /* font-weight: 600; */
+}
+.mid .order{
+  font-size:0.6rem;
+}
+.set{
+  width: 70%;
+  height: 3rem;
+  margin: auto;
+  margin-top: 7rem; 
+}
+.set button{
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 0.8rem;
+}

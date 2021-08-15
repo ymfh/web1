@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="top">
+    <view class="toptext1">Hi</view>
+    <image src="../../gisterimg/客服 (1).png" class="image1"></image>
+  </view>
+  <view class="welcome">
+    欢迎来到配件家族！
+  </view>
+
+  <view class="zhanghao">
+    <ul>
+      <li class="zh1">账号注册</li>
+      <li class="zh2">账号登录</li>
+    </ul>
+  </view>
+  <input type="text" class="phone" placeholder="请输入手机号" />
+  <input type="text" class="yanzheng" placeholder="请输入验证码" />
+  <view class="yanzheng1">获取验证码</view>
+  <input type="password" class="phone" placeholder="请设置密码（含大小写、数字）" />
+  <button style="width:84%;height:50px;line-height: 40px; margin-top: 2rem;background: black;color:white" bindtap="login">注册</button>
+</view>

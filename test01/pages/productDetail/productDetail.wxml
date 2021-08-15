@@ -1,0 +1,159 @@
+<!--pages/productDetail/productDetail.wxml-->
+<view class="box">
+  <view class="nav" bindtap="onSwitchTab">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <!-- <image src="http://pqzg9c.natappfree.cc{{detlist1.original_img}}" /> -->
+      <block wx:for="{{detlist1.imgList}}" wx:for-item="img" wx:key="index" style="height:13rem">
+        <swiper-item>
+          <view data-index="{{index}}">
+            <image src="http://img.9lele.com{{img.image_url}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="price">
+    <view>￥<text>{{detlist1.shop_price}}</text></view>
+    <view>
+      <image src="../../img/降价.png" />
+      <text>降价通知</text>
+    </view>
+    <view bindtap="onShareAppMessage">
+      <image src="../../img/收藏.png" />
+      <text>收藏有礼</text>
+    </view>
+  </view>
+  
+  <view class="name">
+    <view>
+      <text>{{detlist1.goods_name}}</text>
+    </view>
+    <view>
+      <text>·M1芯片·轻薄便携·超长续航</text>
+    </view>
+    <view>
+      <text>快递:免运园</text>
+      <text>上海</text>
+    </view>
+    <view>
+      <text>「欢乐开学季」M1部分型号下单赠希捷1TB移动硬盘、绿联拓展坞、腾讯视频会员，以旧换新至高补贴3000元更多优惠请点击查看></text>
+    </view>
+  </view>
+  <view class="bao">
+    <view class="bao-left">
+      <text>保障</text>
+    </view>
+    <view class="bao-mid">
+      <text>付款后3大内友货</text>
+      <text>假一赔四·极速退款·七天无理由退换</text>
+    </view>
+    <view class="bao-right">
+      <image src="../../img/箭头 右.png" />
+    </view>
+  </view>
+  <view class="select">
+    <view class="bao-left">
+      <text>选择</text>
+    </view>
+    <view class="bao-mid">
+      <text>配送至:地址,选择网络类型,机身颜色,存储..</text>
+    </view>
+    <view class="bao-right">
+      <image src="../../img/箭头 右.png" />
+    </view>
+  </view>
+  <view class="pj">
+    <view class="pj-top">
+      <text>用户评价(92348)</text>
+      <text>查看全部</text>
+      <image src="../../img/箭头 右.png" style="width:1rem;height:1rem" />
+    </view>
+    <view class="but">
+      <text>运行稳定</text>
+      <text>反应灵敏</text>
+      <text>超长续航</text>
+    </view>
+    <view class="nick">
+      <image src="../../img/2.png"></image>
+      <text>执**n</text>
+      <text>运行速度:目前用过的最快的笔记本电脑,没有之一屏幕效果:惊艳的视觉效果散热性能:只能说冷冰冰...</text>
+    </view>
+
+
+    <view class="original_img">
+      <rich-text nodes="{{detlist1.goods_content}}"></rich-text>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view>
+      <image src="../../img/客服.png"></image>
+      <text>客服</text>
+    </view>
+    <view bindtap="clickme">
+      <image src="../../img/购物车.png"></image>
+      <text>购物车</text>
+    </view>
+    <view>
+      <text bindtap="clickme">加入购物车</text>
+    </view>
+    <view>
+      <text>立即购买</text>
+    </view>
+  </view>
+
+
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class="top">
+      <image src="http://img.9lele.com/{{url}}" />
+      <text>￥</text><text class="bigfont">{{price}}</text>
+      <view class="close"  bindtap="hideModal">x</view>
+    </view>
+    <view class="dizhi">
+      <view class="di-left">
+        <text>配送区域</text><text>(配送地可能会影响库存，请正确选择)</text>
+        <view></view>
+        <image style="width:1rem;height:1rem" src="../../img1/定位.png"></image>
+        <text>北京市海淀区</text>
+      </view>
+      <view class="di-right">
+        <image src="../../img1/箭头 右.png" />
+      </view>
+    </view>
+    <view class="desc">
+      <view class="s">颜色分类</view>
+      <view class="a">
+        <view wx:for="{{skuPid}}" wx:key="index" bindtap="check1" data-ids="{{item}}">
+          <text wx:if="{{item.id==skuPid0}}" class="wx1_check">{{item.name}}</text>
+          <text wx:else>{{item.name}}</text>
+        </view>
+      </view>
+      <view class="s">磁盘容量</view>
+      <view class="b">
+        <view wx:for="{{skuSon}}" wx:key="index" bindtap="check2" data-ids="{{item}}">
+          <text wx:if="{{item.id==skuPidSon}}" class="wx2_check">{{item.name}}</text>
+          <text wx:else>{{item.name}}</text>
+        </view>
+      </view>
+      <view class="s">内存容量</view>
+      <view class="c">
+        <text>DG日统一内存</text>
+      </view>
+      <view class="s">
+        <text>购买数量</text>
+        <text>x1</text>
+      </view>
+    </view>
+
+    <view class="but1"><button style="width:80%" bindtap="add">确认</button></view>
+    
+  </view>
+</view>
+
+<!-- <view bindtap="clickme">点击我可以看到底部弹框的出现</view> -->
+<!--屏幕背景变暗的背景  -->
+<!-- <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view> -->
+<!--弹出框  -->
+<!-- <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">在这里写弹出框里面的布局</view> -->

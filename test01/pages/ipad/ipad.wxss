@@ -1,0 +1,78 @@
+/* pages/ipad/ipad.wxss */
+.box{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.one{
+  width: 45%;
+  height: auto;
+}
+.one .a{
+  width: 100%;
+  height: 11rem;
+}
+.one .a image{
+  width: 90%;
+  height: 11rem;
+  display: block;
+  margin: auto;
+}
+.one .b{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.one .c{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  /* background-color: bisque; */
+  margin-top: 0.5rem;
+}
+.one .c .but1{
+  padding: 0.2rem 0.5rem;
+  background-color: #ffd1c6;
+  border-radius: 0.3rem;
+  font-size:10px;
+  color: #f07f7b;
+}
+.one .c .but2{
+  padding: 0.2rem 0.5rem;
+  background-color: #ffd1c6;
+  border-radius: 0.6rem;
+  font-size:10px;
+  color: #f07f7b;
+  margin-right: 1rem;
+}
+.one .d{
+  width: 90%;
+  margin: auto;
+  height: 2.5rem;
+  font-size: 0.5rem;
+  color: chocolate;
+  line-height: 2.5rem;
+  clear: both;
+}
+.one .d text{
+  font-size: 1rem;
+}
+.one .e{
+  width: 90%;
+  margin: auto;
+  font-size: 0.5rem;
+  color: #cccccc;
+  height: 3rem;
+}

@@ -1,0 +1,280 @@
+/* pages/cart/cart.wxss */
+.cart {
+  width: 95%;
+  height: 60rem;
+  position: relative;
+  margin: auto;
+}
+
+.top {
+  width: 95%;
+  margin: auto;
+  height: 3rem;
+  /* background-color: aquamarine; */
+  margin-bottom: 2rem;
+}
+
+.top .top-left {
+  width: 20%;
+  float: left;
+  /* background-color: aquamarine; */
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.top .top-left text:first-child {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.top .top-left text:last-child {
+  display: block;
+  font-size: 0.5rem;
+  color: #cccccc;
+}
+
+.top .top-right {
+  width: 50%;
+  float: right;
+  line-height: 3rem;
+}
+
+.top .top-right text {
+  float: right;
+  margin-right: 1rem;
+}
+
+.item {
+  width: 90%;
+  height: 8.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #cccccc;
+  border-radius: 0.5rem;
+  /* display: -webkit-box; */
+  white-space: wrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.item::-webkit-scrollbar {
+  width: 0;
+}
+
+.item .item-left {
+  width: 15%;
+  float: left;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.item .item-mid {
+  width: 25%;
+  height: 7rem;
+  float: left;
+  /* background-color: aquamarine; */
+}
+
+.item .item-mid image {
+  width: 90%;
+  display: block;
+  margin: auto;
+  height: 6rem;
+  float: left;
+  margin-top: 1rem;
+}
+
+.item .item-right {
+  width: 60%;
+  float: left;
+  /* background-color: #cccccc; */
+  height: 7rem;
+}
+
+.item .item-right view {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.item .item-right view:first-child {
+  /* background-color: #cccccc; */
+  height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+.item .item-right view:first-child text:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+  /* float: left; */
+}
+
+.item .item-right view:first-child text:last-child {
+  color: #cccccc;
+  font-size: 0.7rem;
+  float: right;
+  margin-right: 1rem;
+}
+
+.item .item-right view:nth-child(2) {
+  color: #cccccc;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+
+.item .item-right .color {
+  font-weight: 600;
+  font-size: 1rem;
+  float: left;
+  color: #f03131;
+  margin-top: 1rem;
+}
+
+.ra {
+  width: 10%;
+  height: 7rem;
+  float: left;
+  background-color: #ffce45;
+  border-radius: 0.5rem;
+  z-index: -99;
+  color: #ffffff;
+  font-size: 0.5rem;
+  margin-right: -0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.raa {
+  width: 0.5rem;
+  height: auto;
+  margin-left: 0.8rem;
+}
+
+
+.rb {
+  width: 10%;
+  height: 7rem;
+  float: left;
+  background-color: #f16c2d;
+  margin-right: -0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
+  color: #ffffff;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.rc {
+  width: 10%;
+  height: 7rem;
+  float: left;
+  background-color: #f03131;
+  border-radius: 0.5rem;
+  /* z-index: 99; */
+  color: #ffffff;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.rc image {
+  width: 1rem;
+  height: 1rem;
+}
+
+.but {
+  padding: 0.2rem 0.1rem;
+  text-align: center;
+  border: 0.1rem solid #cccccc;
+  font-size: 0.1rem;
+  border-radius: 0.3rem;
+  float: right;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  line-height: 0.5rem;
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+  /* background-color: #f03131; */
+  margin: auto;
+  line-height: 4rem;
+  /* margin-bottom: 10rem; */
+  position: fixed;
+  top: 35rem;
+  background-color: #ffffff;
+}
+
+.footer .footer-left {
+  width: 25%;
+  height: 4rem;
+  float: left;
+  text-align: center;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+.footer .footer-mid {
+  width: 43%;
+  height: 4rem;
+  float: left;
+  line-height: 4rem;
+  font-weight: 600;
+  text-align: right;
+  color: #f03131;
+}
+
+.footer .footer-mid text {
+  margin-right: 1rem;
+}
+
+.footer .footer-right {
+  width: 25%;
+  height: 4rem;
+  float: left;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer .footer-right button {
+  display: inline-block;
+  height: 2rem;
+  width: 100%;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* 重写 checkbox 样式 */
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input {
+  border-radius: 50%;
+  /* 圆角 */
+  width: 1rem;
+  /* 背景的宽 */
+  height: 1rem;
+  /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background-color: rgb(231, 235, 16);
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #ffffff;
+}

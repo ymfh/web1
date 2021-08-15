@@ -1,0 +1,28 @@
+<!--pages/collect/collect.wxml-->
+<view class="box">
+  <view class="top">
+    <ul>
+      <li>关注</li>
+      <li>粉丝</li>
+      <li>收藏</li>
+    </ul>
+  </view>
+  <view class="q"></view>
+  <view class="main">
+    <ul>
+      <li wx:for="{{list}}" wx:key="index">
+        <view class="left">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="right">
+          <view class="s">{{item.title}}</view>
+          <view class="x">{{item.qian}}</view>
+        </view>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </view>
+</view>

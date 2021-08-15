@@ -1,0 +1,75 @@
+<!--pages/ucenter/ucenter.wxml-->
+<view>
+  <view class="top">
+    <view class="top-top">
+      <image src="../../myimg/shezhi.png" bindtap="set"></image>
+      <image src="../../myimg/kefu.png"></image>
+    </view>
+    <view class="top-mid">
+      <view>
+        <image class="header" src="{{url}}"></image>
+      </view>
+      <view>
+        <text>{{nickname}}</text>
+        <text>云鹤九霄 龙腾四海</text>
+      </view>
+      <view>
+        <image src="../../myimg/箭头 左 小.png"></image>
+      </view>
+    </view>
+    <view class="top-set">
+      <view>
+        <text>68</text>
+        <text>关注</text>
+      </view>
+      <view>
+        <text>0</text>
+        <text>粉丝</text>
+      </view>
+      <view bindtap="store">
+        <text>85</text>
+        <text>收藏</text>
+      </view>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="nav-top">
+      <text>我的订单</text>
+      <text>查看全部></text>
+    </view>
+    <view class="nav-set">
+      <view wx:for="{{navlist}}" wx:key="index">
+        <image src="{{item.img}}" />
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <text class="tui">为您推荐</text>
+  <view class="jian">
+    <view>
+      <image src="../../myimg/1_03.png" class="img1" />
+      <text class="span1">Apple M1芯片，配备8核中央处理器和7核图形处理...</text>
+      <text class="span2">13人已付款</text>
+      <text class="span3">￥7999</text>
+    </view>
+    <view>
+      <image src="../../myimg/1_09.png" class="img1 img2" style="height:11rem" />
+      <text class="span1">Beats Flex -适合全天佩戴的无线入耳式耳机一Beats...</text>
+      <text class="span2">13人已付款</text>
+      <text class="span3">￥399</text>
+    </view>
+    <view>
+      <image src="../../myimg/1_05.png" class="img1 img2" style="height:11rem" />
+      <text class="span1">Beats Flex -适合全天佩戴的无线入耳式耳机一Beats...</text>
+      <text class="span2">13人已付款</text>
+      <text class="span3">￥399</text>
+    </view>
+    <view>
+      <image src="../../myimg/1_03.png" class="img1" />
+      <text class="span1">Apple M1芯片，配备8核中央处理器和7核图形处理...</text>
+      <text class="span2">13人已付款</text>
+      <text class="span3">￥7999</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,93 @@
+<view class="box">
+  <view class="nav"><text>确认订单</text></view>
+  <view class="site">
+    <block wx:if="{{isadd==1}}">
+      <text class="add" bindtap="goaddress">+新增收货地址</text>
+    </block>
+    <block wx:else>
+      <view>
+        <text>收件人：{{address.name}}</text>
+        <text>{{address.tel}}</text>
+      </view>
+      <view class="address">
+        <text>收货地址：{{address.address}}</text>
+      </view>
+      <view>
+        <text>5-6-14-06</text>
+      </view>
+      <view>
+        <text bindtap="goaddress">收获不变时，可选择暂存服务</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="indent">
+
+    <view class="list" wx:for="{{shoplist}}" wx:key="index">
+      <view class="left">
+        <image src="http://img.9lele.com{{item.goods_img}}"></image>
+      </view>
+      <view class="right">
+        <view><text class="font">{{item.goods_name}}</text><text class="price">{{item.price}}</text><text class="str">￥</text></view>
+        <view><text>44毫米曜石灰色Nike RMB</text></view>
+        <view><text>类型:运动型</text></view>
+        <view><text>发货时间:2021.3.12</text></view>
+      </view>
+    </view>
+    <view class="peisong a">
+      <view class="pei-left">购买数量</view>
+      <view class="pei-mid"></view>
+      <view class="pei-right"><text>-</text><text>{{num}}</text><text>+</text></view>
+    </view>
+    <view class="peisong">
+      <view class="pei-left">配送方式</view>
+      <view class="pei-mid">普通配送</view>
+      <view class="pei-right color1">></view>
+    </view>
+    <view class="peisong">
+      <view class="pei-left">运费险</view>
+      <view class="pei-mid">卖家赠送，退换货可赔</view>
+      <view class="pei-right">快递 免邮 <text class="color1"> ></text></view>
+    </view>
+    <view class="peisong">
+      <view class="pei-left">店铺优惠</view>
+      <view class="pei-mid">店铺省5元：感恩3月</view>
+      <view class="pei-right"><text class="color3">-￥5.00</text><text class="color1"> ></text></view>
+    </view>
+    <view class="peisong">
+      <view class="pei-left">订单备注</view>
+      <view class="pei-mid">选填，请先和商家协商一致</view>
+      <view class="pei-right"></view>
+    </view>
+    <view class="peisong1">
+      <view class="peice"><text class="color1">共{{num}}件 </text> <text>小件：</text> <text class="color2">￥</text><text
+          class="color3">{{sumprice}}</text></view>
+    </view>
+  </view>
+
+  <!-- <view class="way">
+    <view class="peisong">
+      <view class="pei-left">
+        <checkbox></checkbox>
+      </view>
+      <view class="pei-mid">花呗分期</view>
+      <view class="pei-right">
+        <checkbox></checkbox>
+      </view>
+    </view>
+    <view class="peisong">
+      <view class="pei-left">
+        <checkbox></checkbox>
+      </view>
+      <view class="pei-mid">帮我付</view>
+      <view class="pei-right">></view>
+    </view>
+  </view>
+  <view class="name">
+    <checkbox></checkbox>
+    匿名购买
+  </view> -->
+  
+  
+  <button class="but" style="width:90%" bindtap="nowbuy">立即购买</button>
+</view>

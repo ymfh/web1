@@ -1,0 +1,106 @@
+/* pages/address/address.wxss */
+.list {
+  width: 90%;
+  height: 8rem;
+  border-bottom: 1px solid #cccccc;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.left {
+  width: 80%;
+  height: 6rem;
+  float: left;
+}
+
+.checked {
+  width: 80%;
+  float: left;
+}
+
+.right {
+  width: 20%;
+  height: 8rem;
+  float: right;
+}
+
+checkbox .wx-checkbox-input {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background-color: royalblue;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.top {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.top button {
+  font-weight: normal;
+  float: left;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+.top .one {
+  background-color: red;
+}
+
+.top .two {
+  background-color: blueviolet;
+}
+
+.top text {
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+.mid {
+  width: 100%;
+  height: 2rem;
+}
+
+.set {
+  width: 100%;
+  height: 2rem;
+}
+
+.set text {
+  color: #cccccc;
+}
+
+.set .username {
+  margin-right: 10%;
+}
+
+.right image {
+  width: 1rem;
+  height: 1rem;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  bottom: 0rem;
+}
+
+.footer button {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: normal;
+}
